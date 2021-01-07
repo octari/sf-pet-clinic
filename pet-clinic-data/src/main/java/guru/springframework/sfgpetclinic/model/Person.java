@@ -9,7 +9,7 @@ public class Person extends BaseEntity{
         return firsName;
     }
 
-    public void setFirsName(String firsName) {
+    public void setFirstName(String firsName) {
         this.firsName = firsName;
     }
 

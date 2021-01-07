@@ -1,4 +1,4 @@
-package guru.springframework.sfgpetclinic.model;
+package guru.springframework.sfpetclinic.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

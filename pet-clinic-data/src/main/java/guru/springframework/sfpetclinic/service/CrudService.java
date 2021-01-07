@@ -1,4 +1,4 @@
-package guru.springframework.sfgpetclinic.service;
+package guru.springframework.sfpetclinic.service;
 
 import java.util.Set;
 

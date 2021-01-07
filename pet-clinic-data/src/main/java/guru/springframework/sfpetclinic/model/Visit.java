@@ -1,6 +1,4 @@
-package guru.springframework.sfgpetclinic.model;
-
-import lombok.*;
+package guru.springframework.sfpetclinic.model;
 
 import javax.persistence.*;
 import java.time.LocalDate;

@@ -1,26 +1,29 @@
 package guru.springframework.sfpetclinic.bootstrap;
 
+import guru.springframework.sfpetclinic.model.Owner;
+import guru.springframework.sfpetclinic.model.Vet;
+import guru.springframework.sfpetclinic.service.OwnerService;
+import guru.springframework.sfpetclinic.service.VetService;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import guru.springframework.sfgpetclinic.model.Owner;
-import guru.springframework.sfgpetclinic.model.Vet;
-import guru.springframework.sfgpetclinic.service.OwnerService;
-import guru.springframework.sfgpetclinic.service.VetService;
-import guru.springframework.sfgpetclinic.service.map.OwnerMapService;
-import guru.springframework.sfgpetclinic.service.map.VetMapService;
-
-
 @Component
 public class DataLoader implements CommandLineRunner {
-
   private final OwnerService ownerService;
   private final VetService vetService;
 
-  public DataLoader() {
-    ownerService = new OwnerMapService();
-    vetService = new VetMapService();
+  @Autowired
+  public DataLoader(OwnerService ownerService, VetService vetService) {
+    this.ownerService = ownerService;
+    this.vetService = vetService;
   }
+
+//  public DataLoader() {
+//    ownerService = new OwnerMapService();
+//    vetService = new VetMapService();
+//  }
 
   @Override
   public void run(String... args) throws Exception {
@@ -57,4 +60,5 @@ public class DataLoader implements CommandLineRunner {
 
     System.out.println("Loaded Vets....");
   }
+
 }

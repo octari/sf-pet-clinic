@@ -1,8 +1,8 @@
-package guru.springframework.sfgpetclinic.service.map;
+package guru.springframework.sfpetclinic.service.map;
 
 import java.util.*;
 
-import guru.springframework.sfgpetclinic.model.BaseEntity;
+import guru.springframework.sfpetclinic.model.BaseEntity;
 
 public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> {
 

@@ -3,6 +3,7 @@ package guru.springframework.sfpetclinic.service.map;
 import org.springframework.stereotype.Service;
 
 import guru.springframework.sfpetclinic.model.Owner;
+import guru.springframework.sfpetclinic.model.Pet;
 import guru.springframework.sfpetclinic.service.OwnerService;
 
 import java.util.Set;
